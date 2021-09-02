@@ -11,10 +11,15 @@ knitr::opts_chunk$set(
 )
 ```
 
-# AusGDP
-R scripts for Australian GDP forecast and reconciliation:
+# Australian Gross Domestic Product (GDP) application, Di Fonzo and Girolimetto (2021)
 
-* **00Aus_base.R**: aggregating and forecasting Australian GDP Time series by quarter, semester and year (in: `AusGDP_inpdata.RData`, out: `Aus_basef.RData`);
+The cross-temporal forecast reconciliation for 95 Australian Quarterly National Accounts time series is applied within the same forecasting experiment designed by Athanasopoulos et al. (2019) extended in order to consider semi-annual and annual forecasts as well.
+
+_Keywords:_ Linearly constrained multiple time series, Combining forecasts, Heuristic techniques, Evaluating forecasts, GDP from Income and Expenditure side
+
+#### R scripts:
+
+* **00Aus_base.R**: aggregating and forecasting Australian GDP Time series by quarter, semester and year (input: `AusGDP_inpdata.RData`, output: `Aus_basef.RData`);
 
 * **01AusHTS_recf.R**: creating an RData file of base and cross-sectional reconciled forecasts for the Australian GDP's system (input: `Aus_basef.RData`, output: `AusHTS_recf.RData`)
 
@@ -35,3 +40,8 @@ R scripts for Australian GDP forecast and reconciliation:
 * **09Aus_mcbPlot.R**: Model Comparison with the Best (input: `Aus_mcb.RData`)
 
 * **10Aus_plotWP.R**: Plots of the paper (input: `AusCTR_scores.RData`, `AusHTS_scores.RData` & `AusTMP_scores.RData`)
+
+#### References:
+Athanasopoulos, G., Gamakumara, P., Panagiotelis, A., Hyndman, R.J., Affan, M., 2019. Hierarchical Forecasting, in: Fuleky, P. (Ed.), _Macroeconomic Forecasting in the Era of Big Data._ Springer, Cham, pp. 689–719. [doi:10.1007/978-3-030-31150-6_21](https://dx.doi.org/10.1007/978-3-030-31150-6_21).
+
+Di Fonzo, T., Girolimetto, D. (2021a), Cross-temporal forecast reconciliation: Optimal combination method and heuristic alternatives, _International Journal of Forecasting_, _in press_ (draft version: [arXiv:2006.08570](https://arxiv.org/abs/2006.08570)).
