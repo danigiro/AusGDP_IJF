@@ -68,7 +68,7 @@ Affan, M., 2019. Hierarchical Forecasting, in: Fuleky, P. (Ed.),
 pp. 689–719.
 [doi:10.1007/978-3-030-31150-6\_21](https://dx.doi.org/10.1007/978-3-030-31150-6_21).
 
-Di Fonzo, T., Girolimetto, D. (2021a), Cross-temporal forecast
+Di Fonzo, T., Girolimetto, D. (2021), Cross-temporal forecast
 reconciliation: Optimal combination method and heuristic alternatives,
 *International Journal of Forecasting*, *in press* (draft version:
 [arXiv:2006.08570](https://arxiv.org/abs/2006.08570)).
